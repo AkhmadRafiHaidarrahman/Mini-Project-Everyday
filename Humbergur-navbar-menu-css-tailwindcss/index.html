@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Navbar humburger menu/src/output.css">
+    <style>
+        @media only screen and (min-width: 320px){
+            nav{
+                display: flex;
+                height: 10rem;
+                justify-content: end;
+                width: 320px;
+                display: flex;
+                align-items: center;
+            }
+            details{
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            details summary{
+                padding: 1rem;
+                background-image: url(./src/more.png);
+                background-position: center;
+                background-size: cover;
+                width: 1rem;
+                height: 1rem;
+            }
+            details .burger-list{
+                padding-bottom: 1rem;
+            }
+            .burger{
+                display: flex;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding-bottom: 10rem;
+            }
+            .burger img{
+                width: 2rem;
+                height: 2rem;
+            }
+            .Logo{
+                display: none;
+            }
+            .list-item{
+                display: none;
+            }
+            .burger-list{
+                display: flex;
+                top: 1rem;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                width: 10rem;
+                background-color: aliceblue;
+                align-items: center;
+            }
+        }
+        @media only screen and (min-width: 375px){
+            nav{
+                display: flex;
+                height: 10rem;
+                justify-content: end;
+                width: 375px;
+                display: flex;
+                align-items: center;
+            }
+            details{
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            details summary{
+                padding: 1rem;
+                background-image: url(./src/more.png);
+                background-position: center;
+                background-size: cover;
+                width: 1rem;
+                height: 1rem;
+            }
+            details .burger-list{
+                padding-bottom: 1rem;
+            }
+            .burger{
+                display: flex;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding-bottom: 10rem;
+            }
+            .burger img{
+                width: 2rem;
+                height: 2rem;
+            }
+            .Logo{
+                display: none;
+            }
+            .list-item{
+                display: none;
+            }
+            .burger-list{
+                display: flex;
+                top: 1rem;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                width: 10rem;
+                background-color: aliceblue;
+                align-items: center;
+            }
+        }
+        @media only screen and (min-width: 425px){
+            nav{
+                display: flex;
+                height: 10rem;
+                justify-content: end;
+                width: 425px;
+                display: flex;
+                align-items: center;
+            }
+            details{
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            details summary{
+                padding: 1rem;
+                background-image: url(./src/more.png);
+                background-position: center;
+                background-size: cover;
+                width: 1rem;
+                height: 1rem;
+            }
+            details .burger-list{
+                padding-bottom: 1rem;
+            }
+            .burger{
+                display: flex;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding-bottom: 10rem;
+            }
+            .burger img{
+                width: 2rem;
+                height: 2rem;
+            }
+            .Logo{
+                display: none;
+            }
+            .list-item{
+                display: none;
+            }
+            .burger-list{
+                display: flex;
+                top: 1rem;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                width: 10rem;
+                background-color: aliceblue;
+                align-items: center;
+            }
+        }
+        @media only screen and (min-width: 768px){
+            nav{
+                width: 100%;
+                justify-content: space-evenly;
+                color: white;
+                font-size: 1rem;
+            }
+            span{
+                display: none;
+                width: 100%;
+                margin: 2rem;
+            }
+            details{
+                display: none;
+                width: 2rem;
+            }
+            .Logo{
+                display: flex;
+            }
+            .list-item{
+                display: flex;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <details>
+                <summary>
+                    <span class="burger">
+        <img src="/Navbar humburger menu/src/more.png" alt="">
+                </span>
+            </summary>
+                <ul class="burger-list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Me</li>
+                </ul>
+            </details>
+            <div class="Logo">humburger</div>
+        <ul class="list-item">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Me</a></li>
+        </ul>
+    </nav>
+    <section class="">
+        This is Just experimental css html and tailwindcss
+    </section>
+</body>
+</html>

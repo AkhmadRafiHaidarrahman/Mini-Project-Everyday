@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+nav{
+    @apply flex justify-evenly w-screen h-32 bg-blue-700
+}
+.list-item{
+    @apply flex w-40 justify-evenly 
+}
