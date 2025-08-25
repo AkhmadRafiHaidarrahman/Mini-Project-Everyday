@@ -1,0 +1,18 @@
+@import "tailwindcss";
+ 
+.Layar{
+    @apply flex w-screen h-screen justify-center items-center
+}
+
+.kotak{
+    @apply p-4 flex w-[30rem] h-96 justify-center items-center backdrop-blur-lg flex-col rounded-3xl shadow-2xl shadow-white
+}
+.content{
+    @apply h-32 w-full
+}
+button{
+    @apply bg-blue-400 p-2.5 w-[10rem] rounded-2xl text-zinc-50 hover:transition transition-shadow hover:shadow-white shadow-2xl cursor-pointer hover:bg-blue-700
+}
+.content span{
+    @apply shadow-2xl shadow-white text-2xl text-white
+}
