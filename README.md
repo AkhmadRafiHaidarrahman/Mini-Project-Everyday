@@ -1,2 +1,2 @@
 # Mini-Project-Everyday
-tab button (in progress beacause im sleepy)
+tab button (in progress because im sleepy)
