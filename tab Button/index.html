@@ -7,35 +7,66 @@
     <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <section class="flex h-screen w-screen justify-center items-center bg-black ">
-        <div class="h-max w-[30rem] bg-white rounded-md bg-center bg-cover no bg-no-repeat backdrop-blur-2xl   shadow-lg shadow-indigo-500">
-            <img class="h-76 p-2.5 w-full" src="jonas-degener-J9RFnXJ12TQ-unsplash.jpg" alt="">
-            <div class="w-full italic text-2xl bg-conic-300 flex justify-evenly">
-                <button id="btn-history" class="p-1 cursor-pointer hover:transition hover:bg-blue-400 hover:ease-in hover:rounded-md transition rounded-md w-full">History</button>
-                <button id="btn-vision" class="p-1 cursor-pointer hover:transition hover:bg-blue-400 hover:ease-in hover:rounded-md transition rounded-md w-full">Vision</button>
-                <button id="btn-goals" class="p-1 cursor-pointer hover:transition hover:bg-blue-400 hover:ease-in hover:rounded-md transition rounded-md w-full">Goals</button>
+<body class="bg-black">
+     <section class="flex h-screen w-screen justify-center items-center bg-black">
+        <div id="kotak" class="h-max w-[30rem] bg-white rounded-md shadow-lg shadow-indigo-500">
+            <div class="h-76 p-2.5 w-full bg-gradient-to-r  bg-cover bg-center bg-[url('jonas-degener-J9RFnXJ12TQ-unsplash.jpg')] from-blue-500 to-purple-600 rounded-t-md flex items-center justify-center">
             </div>
-            <div id="History" class="hidden w-full h-96 justify-center flex-col p-6">
-                <h1 class="font-bold font-serif text-2xl text-black m-1.5">History</h1>
-                <span class="text-gray-500 ">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </span>
-            </div>
-            <div id="Vision" class="hidden w-full h-96 justify-center flex-col p-6">
-                <h1 class="font-bold font-serif text-2xl text-black m-1.5">Vision</h1>
-                <span class="text-gray-500 ">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </span>
-            </div>
-            <div id="Goals" class="hidden w-full h-96 justify-center flex-col p-6">
-                <h1 class="font-bold font-serif text-2xl text-black m-1.5">Goals</h1>
-                <span class="text-gray-500 ">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </span>
-            </div>
+            
+            <article class="about">
+                <div class="w-full italic text-2xl flex justify-evenly border-b">
+                    <button data-id="History" class="active tab-btn p-3 cursor-pointer hover:bg-blue-400 hover:text-white transition-all duration-300 rounded-t-md w-full">
+                        History
+                    </button>
+                    <button data-id="Vision" class="tab-btn p-3 cursor-pointer hover:bg-blue-400 hover:text-white transition-all duration-300 rounded-t-md w-full">
+                        Vision
+                    </button>
+                    <button data-id="Goals" class="tab-btn p-3 cursor-pointer hover:bg-blue-400 hover:text-white transition-all duration-300 rounded-t-md w-full">
+                        Goals
+                    </button>
+                </div>
+
+                <div id="History" class="content hidden w-full justify-center flex-col p-6">
+                    <h1 class="font-bold font-serif text-2xl text-black mb-4">History</h1>
+                    <div class="text-gray-600 leading-relaxed">
+                        <p class="mb-4">Here's an overview of your journey and important milestones that have shaped your path.</p>
+                        <ul class="space-y-2">
+                            <li><strong>2024:</strong> Started learning web development</li>
+                            <li><strong>2023:</strong> Completed first programming course</li>
+                            <li><strong>2022:</strong> Discovered passion for technology</li>
+                            <li><strong>2021:</strong> Began exploring different career paths</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="Vision" class="content hidden w-full justify-center flex-col p-6">
+                    <h1 class="font-bold font-serif text-2xl text-black mb-4">Vision</h1>
+                    <div class="text-gray-600 leading-relaxed">
+                        <p class="mb-4">Your long-term vision and aspirations for the future.</p>
+                        <ul class="space-y-2">
+                            <li><strong>Personal Growth:</strong> Become a skilled full-stack developer</li>
+                            <li><strong>Innovation:</strong> Create solutions that make a difference</li>
+                            <li><strong>Leadership:</strong> Lead and mentor development teams</li>
+                            <li><strong>Impact:</strong> Build applications used by millions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="Goals" class="content hidden w-full justify-center flex-col p-6">
+                    <h1 class="font-bold font-serif text-2xl text-black mb-4">Goals</h1>
+                    <div class="text-gray-600 leading-relaxed">
+                        <p class="mb-4">Your current objectives and targets to achieve success.</p>
+                        <ul class="space-y-2">
+                            <li><strong>This Month:</strong> Master React and Node.js fundamentals</li>
+                            <li><strong>This Quarter:</strong> Build 3 portfolio projects</li>
+                            <li><strong>This Year:</strong> Land first developer job</li>
+                            <li><strong>Long-term:</strong> Start own tech company</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
         </div>
-    </section>
+    </section>      
     <script src="script.js"></script>
 </body>
 </html>
