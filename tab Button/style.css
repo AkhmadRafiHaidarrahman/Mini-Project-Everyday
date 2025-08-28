@@ -1,0 +1,16 @@
+.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        
+        .content {
+            display: flex;
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+
+        #kotak {
+            background: rgba(255, 255, 255, 0.95);
+        }
